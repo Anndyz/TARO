@@ -1,5 +1,5 @@
 import Taro, { Component, Config } from '@tarojs/taro'
-import Index from './pages/index'
+import Index from './pages/latest/latest'
 
 import './app.css'
 
@@ -20,14 +20,42 @@ class App extends Component {
    */
   config: Config = {
     pages: [
-      'pages/index/index'
+      'pages/latest/latest',
+      "pages/hotest/hotest",
+      "pages/node/node"
     ],
     window: {
       backgroundTextStyle: 'light',
       navigationBarBackgroundColor: '#fff',
       navigationBarTitleText: 'WeChat',
       navigationBarTextStyle: 'black'
-    }
+    },
+    tabBar: {
+      color: "#000",
+      selectedColor: "#56abe4",
+      backgroundColor: "#fff",
+      borderStyle: "white",
+      list: [
+        {
+          pagePath: "pages/latest/latest",
+          text: "最新",
+          iconPath: "images/latest.png",
+          selectedIconPath: "images/lastest_on.png"
+        },
+        {
+          pagePath: "pages/hotest/hotest",
+          text: "最热",
+          iconPath: "images/hotest.png",
+          selectedIconPath: "images/hotest_on.png"
+        },
+        {
+          pagePath: "pages/node/node",
+          text: "节点",
+          iconPath: "images/node.png",
+          selectedIconPath: "images/node_on.png"
+        }
+      ]
+    },
   }
 
   componentDidMount () {}
