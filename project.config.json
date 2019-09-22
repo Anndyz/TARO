@@ -2,7 +2,7 @@
 	"miniprogramRoot": "dist/",
 	"projectname": "V2EX-TARO",
 	"description": "",
-	"appid": "touristappid",
+	"appid": "wx89b32c39ba35ac37",
 	"setting": {
 		"urlCheck": true,
 		"es6": false,
